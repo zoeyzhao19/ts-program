@@ -5,7 +5,7 @@ export default {
   output: {
     file: 'dist/index.js', 
     format: 'cjs',// rollup支持的多种输出格式(有amd,cjs, es, iife 和 umd)
-    sourcemap: true
+    // sourcemap: true
   },
 
   plugins: [

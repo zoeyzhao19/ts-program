@@ -26,4 +26,3 @@ function parseQueryString(queryStr) {
 }
 
 exports.parseQueryString = parseQueryString;
-//# sourceMappingURL=index.js.map
