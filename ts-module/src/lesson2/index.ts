@@ -1,4 +1,3 @@
-
 // 元组类型相关
 type Tuple = [1,2,3];
 // 元组类型末尾追加元素
@@ -84,3 +83,5 @@ type FilterByValueTypeResult = FilterByValueType<Person, string | number>
 /**
  * end 索引类型重新构造
  */
+
+export {}

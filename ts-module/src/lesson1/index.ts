@@ -1,4 +1,4 @@
-
+type Tuple = [1,2,3];
 type GetValueType<P> = P extends Promise<infer Value> ? Value : never;
 type GetValueResult = GetValueType<Promise<'guang'>>;
 
@@ -62,3 +62,5 @@ type GetInstanceTypeResult = GetInstanceType<PersonConstructor>;
 //取出构造器参数
 type GetConstructorParameters<ConstructorType extends new(...args: any[]) => any> = ConstructorType extends new(...args: infer ConstructorParameters) => any ? ConstructorParameters : any
 type GetConstructorParametersResult = GetConstructorParameters<PersonConstructor>;
+
+export {}
