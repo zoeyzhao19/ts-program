@@ -63,4 +63,4 @@ type GetInstanceTypeResult = GetInstanceType<PersonConstructor>;
 type GetConstructorParameters<ConstructorType extends new(...args: any[]) => any> = ConstructorType extends new(...args: infer ConstructorParameters) => any ? ConstructorParameters : any
 type GetConstructorParametersResult = GetConstructorParameters<PersonConstructor>;
 
-export {}
+// export {}
