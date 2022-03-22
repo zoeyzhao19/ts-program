@@ -4,7 +4,7 @@ type Tuple = [1,2,3];
 type PushTuple<Arr extends unknown[], Ele> = Ele extends unknown[] ? [...Arr, ...Ele] : [...Arr,Ele]
 type PushTupleResult = PushTuple<[1,2,3,4], [5, 6]>
 
-// 袁旭类型前面添加元素
+// 元组类型前面添加元素
 type UnshiftTuple<Arr extends unknown[], Ele> = Ele extends unknown[] ? [...Ele, ...Arr] : [Ele, ...Arr]
 type UnshiftTupleResult = PushTuple<[1,2,3,4], 0>
 
