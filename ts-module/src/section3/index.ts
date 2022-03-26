@@ -90,4 +90,4 @@ namespace Lesson3 {
   type DeepReadonlyResult2 = DeepReadonly<obj>['a']['b']['c'];
 }
 
-export default Lesson3
+// export default Lesson3

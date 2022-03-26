@@ -2,7 +2,7 @@
   "name": "ts-module",
   "version": "1.0.0",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "lib/index.d.ts",
   "repository": "git@github.com:zoeyzhao19/ts-program.git",
   "author": "zoeyzhao <zoeyzhao19@gmail.com>",
   "license": "MIT",

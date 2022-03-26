@@ -96,4 +96,19 @@ namespace Lesson8 {
       name: string,
       a: number
     }, 'age' | 'name'>
+  
+  // undefined/null extends any/unknown => true
+  // undefined/null extends 其他类型 => 通过strictNullChecks开关控制true或false
+  // type UndefinedKeys<T extends Record<string, unknown>> = {
+  //   [K in keyof T]: undefined extends T[K] ? K : never
+  // };
+  // type MyType = {a: string, b: string | undefined}
+  // type Result1 = UndefinedKeys<MyType>;
+  // const a1: Result1['a'] = 'a';
+  
+  // type X<T extends any> = undefined extends T ? true : false;
+  // type Y<T extends any[]> = undefined extends T[number] ? true : false;
+  
+  // type A = X<number>;
+  // type B = Y<number[]>;
 }

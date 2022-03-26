@@ -1,7 +1,3 @@
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
 function parseQueryString(queryStr) {
     if (!queryStr || !queryStr.length) {
         return {};
@@ -25,4 +21,4 @@ function parseQueryString(queryStr) {
     return queryObj;
 }
 
-exports.parseQueryString = parseQueryString;
+export { parseQueryString };
