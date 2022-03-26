@@ -99,6 +99,7 @@
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
   "include": [
-    "./src/index.ts",
+    "./src", // lib文件夹下会输出所有声明文件，
+    // "./src/index.ts"  lib文件夹只会输出index.ts的声明文件
   ]
 }

@@ -1,1 +1,0 @@
-export { parseQueryString } from './parseQueryString';
