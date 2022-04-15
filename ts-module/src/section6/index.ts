@@ -32,8 +32,10 @@ namespace Lesson6 {
     (U extends U ? (x: U) => unknown : never) extends (x: infer R) => unknown
       ? R 
       : never
+  type UnionToIntersection2<U> = 
+    (U extends any ? (k: U) => void : never) extends ((k: infer I) => void) ? I : never
   type UnionToIntersectionResult = UnionToIntersection<{ 'guang': 1} | {'dong': 2}>
-
+  type UnionToIntersectionResult2 = UnionToIntersection2<'guang' | 'dong'> // ???
   // 过滤可选索引
   type GetOptional<Obj extends Record<string, any>> = {
     [ Key in keyof Obj as {} extends Pick<Obj, Key> ? Key : never] : Obj[Key]
