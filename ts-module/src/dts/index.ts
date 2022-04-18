@@ -1,0 +1,1 @@
+declare function func(name: string): void
